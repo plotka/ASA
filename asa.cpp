@@ -133,18 +133,6 @@ int main(){
 	vector<bool> toErase;
 	toErase.resize(sccs.size(), false);
 
-	/*for(unsigned int i=0; i<edges.size(); i++){
-		for(unsigned int j=0; j<edges[i].size(); j++){
-			if(nodes[i]->rep != edges[i][j]->rep)
-				toErase[i] = true;
-		}
-	}
-	for(unsigned int i=0; i<toErase.size(); i++){
-		if(toErase[i]){
-			sccs.erase(sccs.begin()+i);
-		}
-	}*/
-	
 	for(unsigned int i=0; i<sccs.size(); i++){
 		for(unsigned int j=0; j<sccs[i].size(); j++){
 			if(!(toErase[i])){

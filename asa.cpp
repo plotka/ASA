@@ -2,7 +2,6 @@
 #include <stack>
 #include <stdio.h>
 
-
 using namespace std; 
 
 struct Node {
@@ -11,7 +10,6 @@ struct Node {
 	int d;
 	int low;
 	Node* rep;
-	
 	Node() : onStack(false)
 	{}
 };
@@ -71,7 +69,6 @@ void tarjanVisit(Node* nodeU, int* pvisited, stack<Node*> *pL){
 		}
 		sccs.push_back(vecNodes);
 	}
-	
 }
 
 void scc_Tarjan(vector<Node*> nodes, vector< vector<Node*> > edges){
@@ -88,7 +85,6 @@ void scc_Tarjan(vector<Node*> nodes, vector< vector<Node*> > edges){
 		}
 	}
 }
-
 
 
 int main(){
